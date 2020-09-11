@@ -16,3 +16,10 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('home');
 });
+
+
+Route::name('core.')->group(function(){
+    Route::get('compress', 'CompressPdfController@show')->name('compress');
+    Route::get('cut', 'CutPdfController@show')->name('cut');
+    Route::get('secure', 'SecurePdfController@show')->name('secure');
+});
