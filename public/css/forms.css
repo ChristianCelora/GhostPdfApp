@@ -281,10 +281,43 @@
       left: 50%;
       margin-left: -27px; }
 .dropzone {
-  border: 2px dashed #e3342f;
+  border: 2px dashed;
   border-radius: 5px;
-  background: #f8fafc;
   height: 200px;
   /*test*/
+}
+
+.dz-preview {
+  width: 100% !important;
+}
+
+.dz-image {
+  background: #f8fafc !important;
+}
+
+.dz-progress {
+  margin-left: -70px !important;
+  top: 90% !important;
+  width: 150px !important;
+}
+
+.dz-error-mark,
+.dz-error-message {
+  display: none !important;
+}
+
+.dropzone-1 {
+  background: #cc2e2a;
+  border-color: #e3342f;
+}
+
+.dropzone-2 {
+  background: #dd8938;
+  border-color: #f6993f;
+}
+
+.dropzone-3 {
+  background: #dac409;
+  border-color: #f3da0b;
 }
 

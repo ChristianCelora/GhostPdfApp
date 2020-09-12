@@ -19,9 +19,9 @@ Route::get('/', function () {
 
 
 Route::name('view.')->group(function(){
-    Route::get('compress', 'CompressPdfController@show')->name('compress');
-    Route::get('cut', 'CutPdfController@show')->name('cut');
-    Route::get('secure', 'SecurePdfController@show')->name('secure');
+    Route::get('v_compress', 'CompressPdfController@show')->name('v_compress');
+    Route::get('v_cut', 'CutPdfController@show')->name('v_cut');
+    Route::get('v_secure', 'SecurePdfController@show')->name('v_secure');
 });
 
 Route::name('core.')->group(function(){

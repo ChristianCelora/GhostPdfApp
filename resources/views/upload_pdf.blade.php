@@ -15,7 +15,20 @@
         <div >
             {{$name}}
         </div>
-        <form action="{{route($form_action)}}" class="dropzone w-100" id="file-uploader">
+        @switch($color)
+            @case("red")
+                @php $dropzone_style = "dropzone-1"; @endphp
+                @break
+
+            @case("orange")
+                @php $dropzone_style = "dropzone-2"; @endphp
+                @break
+
+            @case("yellow")
+                @php $dropzone_style = "dropzone-3"; @endphp
+                @break
+        @endswitch
+        <form action="{{route($form_action)}}" class="dropzone w-100 {{$dropzone_style}}" id="file-uploader">
         </form>
     </div>
 </div>

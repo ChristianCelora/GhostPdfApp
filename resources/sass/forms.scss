@@ -3,9 +3,41 @@
 @import '~dropzone/dist/basic.css';
 
 .dropzone {
-    border: 2px dashed $red;
+    border: 2px dashed;
     border-radius: 5px;
-    background: $body-bg;
     height: 200px; /*test*/
 }
 
+.dz-preview {
+    width: 100% !important;
+}
+
+.dz-image {
+    background: $body-bg !important;
+}
+
+.dz-progress {
+    // margin-top: 35px;
+    margin-left: -70px !important;
+    top: 90% !important;
+    width: 150px !important;
+}
+
+.dz-error-mark, .dz-error-message {
+    display: none !important;
+}
+
+.dropzone-1 {
+    background: $bg-red;
+    border-color: $red;
+}
+
+.dropzone-2 {
+    background: $bg-orange;
+    border-color: $orange;
+}
+
+.dropzone-3 {
+    background: $bg-yellow;
+    border-color: $yellow;
+}
