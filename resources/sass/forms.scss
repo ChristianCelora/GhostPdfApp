@@ -1,0 +1,11 @@
+@import 'variables';
+@import '~dropzone/dist/dropzone.css';
+@import '~dropzone/dist/basic.css';
+
+.dropzone {
+    border: 2px dashed $red;
+    border-radius: 5px;
+    background: $body-bg;
+    height: 200px; /*test*/
+}
+

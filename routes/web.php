@@ -18,6 +18,12 @@ Route::get('/', function () {
 });
 
 
+Route::name('view.')->group(function(){
+    Route::get('compress', 'CompressPdfController@show')->name('compress');
+    Route::get('cut', 'CutPdfController@show')->name('cut');
+    Route::get('secure', 'SecurePdfController@show')->name('secure');
+});
+
 Route::name('core.')->group(function(){
     Route::get('compress', 'CompressPdfController@show')->name('compress');
     Route::get('cut', 'CutPdfController@show')->name('cut');
