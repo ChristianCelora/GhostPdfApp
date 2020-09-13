@@ -38,7 +38,7 @@
                 @break
         @endswitch
         <div class="dropzone-container {{$drop_container_style}} w-100 p-3">
-            <form action="{{route($form_action)}}" class="dropzone w-100 {{$dropzone_style}}" id="file-uploader">
+            <form action="{{route($form_action)}}" id="myDropzone" class="dropzone w-100 {{$dropzone_style}}" id="file-uploader">
                 <div class="d-flex justify-content-center w-100">
                     <i class="far fa-3x fa-file-pdf"></i>
                 </div>

@@ -3660,11 +3660,30 @@ module.exports = function(module) {
 
 var Dropzone = __webpack_require__(/*! dropzone/index.js */ "./node_modules/dropzone/index.js");
 
-Dropzone.options.myAwesomeDropzone = {
+Dropzone.options.myDropzone = {
   maxFiles: 1,
   acceptedFiles: ".pdf",
+  paramName: "file",
+  // The name that will be used to transfer the file
+  init: function init() {
+    console.log("dropzone init");
+    this.on("maxfilesexceeded", function () {
+      console.log("maxfilesexceeded");
+
+      if (this.files[1] != null) {
+        this.removeFile(this.files[0]);
+      }
+
+      console.log(this.files);
+    });
+  },
   accept: function accept(file, done) {
     console.log("uploaded");
+
+    if (this.files[1] != null) {
+      this.removeFile(this.files[0]);
+    }
+
     done();
   }
 };
