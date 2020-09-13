@@ -20,6 +20,7 @@
                 @php 
                 $dropzone_style = "dropzone-1"; 
                 $drop_container_style = "dropzone-container-1";
+                $drop_outliner_style = "dropzone-outliner-1";
                 @endphp
                 @break
 
@@ -27,6 +28,7 @@
                 @php 
                 $dropzone_style = "dropzone-2"; 
                 $drop_container_style = "dropzone-container-2";
+                $drop_outliner_style = "dropzone-outliner-2";
                 @endphp
                 @break
 
@@ -34,6 +36,7 @@
                 @php 
                 $dropzone_style = "dropzone-3"; 
                 $drop_container_style = "dropzone-container-3";
+                $drop_outliner_style = "dropzone-outliner-3";
                 @endphp
                 @break
         @endswitch
@@ -43,6 +46,21 @@
                     <i class="far fa-3x fa-file-pdf"></i>
                 </div>
             </form>
+        </div>
+        {{-- Move to new view (override this view) --}}
+        <div class="d-flex justify-content-center w-100 mt-2">
+            <div class="w-50">
+                <select name="compression_type">
+                    <option value="0">Default</option>
+                    <option value="1">Max Compression</option>
+                </select>
+            </div>
+            <div class="px-2 w-50">
+                <button class="btn dropzone-outliner {{$drop_outliner_style}} w-100">
+                    compress
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+            </div>
         </div>
     </div>
 </div>

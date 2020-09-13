@@ -36,28 +36,58 @@
 }
 
 .dropzone-container-1 {
-    background: $red;
+    background-color: $red;
 }
 
 .dropzone-container-2 {
-    background: $orange;
+    background-color: $orange;
 }
 
 .dropzone-container-3 {
-    background: $yellow;
+    background-color: $yellow;
+}
+
+.dropzone-outliner {
+    background-color: transparent;
+    transition: background-color ease-in-out 0.5s;
+    transition: color ease-in 0.25s;
+}
+
+.dropzone-outliner-1 {
+    border: 2px solid $red;
+    &:hover {
+        background-color: $red;
+        color: white;
+    }
+}
+
+.dropzone-outliner-2 {
+    border: 2px solid $orange;
+    &:hover {
+        background-color: $orange;
+        color: white;
+    }
+}
+
+.dropzone-outliner-3 {
+    border: 2px solid $yellow;
+    &:hover {
+        background-color: $yellow;
+        color: white;
+    }
 }
 
 .dropzone-1 {
-    background: $bg-red;
+    background-color: $bg-red;
     border-color: $shade-white;
 }
 
 .dropzone-2 {
-    background: $bg-orange;
+    background-color: $bg-orange;
     border-color: $shade-white;
 }
 
 .dropzone-3 {
-    background: $bg-yellow;
+    background-color: $bg-yellow;
     border-color: $shade-white;
 }

@@ -316,29 +316,62 @@
 }
 
 .dropzone-container-1 {
-  background: #e3342f;
+  background-color: #e3342f;
 }
 
 .dropzone-container-2 {
-  background: #f6993f;
+  background-color: #f6993f;
 }
 
 .dropzone-container-3 {
-  background: #f3da0b;
+  background-color: #f3da0b;
+}
+
+.dropzone-outliner {
+  background-color: transparent;
+  transition: background-color ease-in-out 0.5s;
+  transition: color ease-in 0.25s;
+}
+
+.dropzone-outliner-1 {
+  border: 2px solid #e3342f;
+}
+
+.dropzone-outliner-1:hover {
+  background-color: #e3342f;
+  color: white;
+}
+
+.dropzone-outliner-2 {
+  border: 2px solid #f6993f;
+}
+
+.dropzone-outliner-2:hover {
+  background-color: #f6993f;
+  color: white;
+}
+
+.dropzone-outliner-3 {
+  border: 2px solid #f3da0b;
+}
+
+.dropzone-outliner-3:hover {
+  background-color: #f3da0b;
+  color: white;
 }
 
 .dropzone-1 {
-  background: #cc2e2a;
+  background-color: #cc2e2a;
   border-color: #f8fafc;
 }
 
 .dropzone-2 {
-  background: #dd8938;
+  background-color: #dd8938;
   border-color: #f8fafc;
 }
 
 .dropzone-3 {
-  background: #dac409;
+  background-color: #dac409;
   border-color: #f8fafc;
 }
 
