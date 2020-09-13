@@ -3668,14 +3668,23 @@ Dropzone.options.myDropzone = {
   // The name that will be used to transfer the file
   init: function init() {
     console.log("dropzone init");
-    this.on("maxfilesexceeded", function () {
+    myDropzone = this;
+    myDropzone.on("maxfilesexceeded", function () {
       console.log("maxfilesexceeded");
 
-      if (this.files[1] != null) {
-        this.removeFile(this.files[0]);
+      if (myDropzone.files[1] != null) {
+        myDropzone.removeFile(myDropzone.files[0]);
       }
 
-      console.log(this.files);
+      console.log(myDropzone.files);
+    }); // Force to have 1 file uploaded
+
+    $("#formSubmit").click(function (e) {
+      if (myDropzone.files[0] != null) {
+        myDropzone.processQueue();
+      } else {
+        console.log("Select a file before continue"); // ui message mock
+      }
     });
   },
   accept: function accept(file, done) {
@@ -3690,7 +3699,7 @@ Dropzone.options.myDropzone = {
   sending: function sending() {
     console.log("sending files");
 
-    if (this.files[0] != null) {
+    if (this.files[0] == null) {
       console.log("Select a file before continue");
     }
   }
@@ -3724,13 +3733,6 @@ Dropzone.options.myDropzone = {
 //         }
 //     }
 // });
-
-$("#formSubmit").click(function (e) {
-  e.preventDefault();
-  console.log("prevent submit"); // Dropzone.options.myDropzone.processQueue();
-
-  myDropzone.processQueue();
-});
 
 /***/ }),
 

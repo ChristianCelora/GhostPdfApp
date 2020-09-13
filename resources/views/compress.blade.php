@@ -9,7 +9,7 @@
         </select>
     </div>
     <div class="px-2 w-50">
-        <button {{--type="submit"--}} id="formSubmit" {{--form="myDropzone"--}} class="btn dropzone-outliner dropzone-outliner-red w-100">
+        <button type="submit" id="formSubmit" form="myDropzone" class="btn dropzone-outliner dropzone-outliner-red w-100">
             compress
             <i class="fas fa-arrow-right"></i>
         </button>
