@@ -50,13 +50,13 @@
         {{-- Move to new view (override this view) --}}
         <div class="d-flex justify-content-center w-100 mt-2">
             <div class="w-50">
-                <select name="compression_type">
+                <select class="form-control" name="compression_type">
                     <option value="0">Default</option>
                     <option value="1">Max Compression</option>
                 </select>
             </div>
             <div class="px-2 w-50">
-                <button class="btn dropzone-outliner {{$drop_outliner_style}} w-100">
+                <button type="submit" form="myDropzone" class="btn dropzone-outliner {{$drop_outliner_style}} w-100">
                     compress
                     <i class="fas fa-arrow-right"></i>
                 </button>

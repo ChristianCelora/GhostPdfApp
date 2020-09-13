@@ -375,3 +375,7 @@
   border-color: #f8fafc;
 }
 
+.form-control {
+  background-color: #f8fafc !important;
+}
+
