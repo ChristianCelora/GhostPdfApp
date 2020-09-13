@@ -292,13 +292,22 @@
 }
 
 .dz-image {
-  background: #f8fafc !important;
+  background: transparent !important;
 }
 
 .dz-progress {
   margin-left: -70px !important;
   top: 90% !important;
   width: 150px !important;
+  background-color: transparent !important;
+}
+
+.dz-progress > span.dz-upload {
+  background-color: #f8fafc !important;
+}
+
+.dz-details {
+  text-align: center !important;
 }
 
 .dz-error-mark,
@@ -306,18 +315,30 @@
   display: none !important;
 }
 
+.dropzone-container-1 {
+  background: #e3342f;
+}
+
+.dropzone-container-2 {
+  background: #f6993f;
+}
+
+.dropzone-container-3 {
+  background: #f3da0b;
+}
+
 .dropzone-1 {
   background: #cc2e2a;
-  border-color: #e3342f;
+  border-color: #f8fafc;
 }
 
 .dropzone-2 {
   background: #dd8938;
-  border-color: #f6993f;
+  border-color: #f8fafc;
 }
 
 .dropzone-3 {
   background: #dac409;
-  border-color: #f3da0b;
+  border-color: #f8fafc;
 }
 

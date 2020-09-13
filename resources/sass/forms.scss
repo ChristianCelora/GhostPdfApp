@@ -13,7 +13,7 @@
 }
 
 .dz-image {
-    background: $body-bg !important;
+    background: transparent !important;
 }
 
 .dz-progress {
@@ -21,23 +21,43 @@
     margin-left: -70px !important;
     top: 90% !important;
     width: 150px !important;
+    background-color: transparent !important;
+    & > span.dz-upload {
+        background-color: $shade-white !important;
+    }
+}
+
+.dz-details {
+    text-align: center !important;
 }
 
 .dz-error-mark, .dz-error-message {
     display: none !important;
 }
 
+.dropzone-container-1 {
+    background: $red;
+}
+
+.dropzone-container-2 {
+    background: $orange;
+}
+
+.dropzone-container-3 {
+    background: $yellow;
+}
+
 .dropzone-1 {
     background: $bg-red;
-    border-color: $red;
+    border-color: $shade-white;
 }
 
 .dropzone-2 {
     background: $bg-orange;
-    border-color: $orange;
+    border-color: $shade-white;
 }
 
 .dropzone-3 {
     background: $bg-yellow;
-    border-color: $yellow;
+    border-color: $shade-white;
 }

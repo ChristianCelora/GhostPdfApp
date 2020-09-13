@@ -8,3 +8,17 @@ require('dropzone/index.js');
 // myDropzone.on("sending", function(file, xhr, formData) {
 //     formData.append("_token", CSRF_TOKEN);
 // }); 
+
+Dropzone.options.myAwesomeDropzone = {
+    accept: function(file, done) {
+        console.log("uploaded");
+        done();
+    },
+    init: function() {
+        this.on("addedfile", function() {
+            if (this.files[1]!=null){
+                this.removeFile(this.files[0]);
+            }
+        });
+    }
+};
