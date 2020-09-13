@@ -3666,21 +3666,19 @@ __webpack_require__(/*! dropzone/index.js */ "./node_modules/dropzone/index.js")
 // myDropzone.on("sending", function(file, xhr, formData) {
 //     formData.append("_token", CSRF_TOKEN);
 // }); 
-
-
-Dropzone.options.myAwesomeDropzone = {
-  accept: function accept(file, done) {
-    console.log("uploaded");
-    done();
-  },
-  init: function init() {
-    this.on("addedfile", function () {
-      if (this.files[1] != null) {
-        this.removeFile(this.files[0]);
-      }
-    });
-  }
-};
+// Dropzone.options.myAwesomeDropzone = {
+//     accept: function(file, done) {
+//         console.log("uploaded");
+//         done();
+//     },
+//     init: function() {
+//         this.on("addedfile", function() {
+//             if (this.files[1]!=null){
+//                 this.removeFile(this.files[0]);
+//             }
+//         });
+//     }
+// };
 
 /***/ }),
 
