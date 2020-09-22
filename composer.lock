@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0534a808200590836e1bc93ac35e1e2d",
+    "content-hash": "0392a846798fc37b6ba9859d309b7365",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -109,6 +109,50 @@
                 }
             ],
             "time": "2020-08-18T23:57:15+00:00"
+        },
+        {
+            "name": "celo/ghost-pdf",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ChristianCelora/GhostPDF.git",
+                "reference": "0f71d75e1406bf27b1d85a22dc241efbae959f82"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ChristianCelora/GhostPDF/zipball/0f71d75e1406bf27b1d85a22dc241efbae959f82",
+                "reference": "0f71d75e1406bf27b1d85a22dc241efbae959f82",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^9.3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Celo\\GhostPDF\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Christian Celora",
+                    "homepage": "https://github.com/ChristianCelora",
+                    "role": "Developer"
+                }
+            ],
+            "description": "PDF compression component",
+            "keywords": [
+                "compress",
+                "pdf"
+            ],
+            "time": "2020-09-19T12:44:19+00:00"
         },
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -7090,7 +7134,9 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "celo/ghost-pdf": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {

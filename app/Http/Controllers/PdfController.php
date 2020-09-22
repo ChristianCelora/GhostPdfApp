@@ -14,7 +14,11 @@ abstract class PdfController extends Controller{
     public function show(){
         return view(
             $this->view_name, 
-            ["name" => $this->name, "form_action" => $this->action_route, "color" => $this->style_color]
+            [
+                "name" => $this->name, 
+                "form_action" => $this->action_route, 
+                "color" => $this->style_color
+            ]
         );
     }
     /**
