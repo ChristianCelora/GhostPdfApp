@@ -29,3 +29,6 @@ Route::name('core.')->group(function(){
     Route::post('cut', 'CutPdfController@execute')->name('cut');
     Route::post('secure', 'SecurePdfController@execute')->name('secure');
 });
+
+Route::get('download/{file}/{filename}', 'CompressPdfController@download')->name('download');
+

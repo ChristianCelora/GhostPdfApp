@@ -12,9 +12,6 @@
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
-        <div >
-            {{$name}}
-        </div>
         @switch($color)
             @case("red")
                 @php 

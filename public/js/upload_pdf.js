@@ -3700,6 +3700,14 @@ Dropzone.options.myDropzone = {
     myDropzone.on("complete", function (file) {
       myDropzone.removeFile(file);
     });
+  },
+  success: function success(file, response) {
+    console.log(response);
+
+    if ("file" in response && "name" in response) {
+      url = "download/" + response["file"] + "/" + response["name"];
+      document.location.href = url;
+    }
   }
 };
 
