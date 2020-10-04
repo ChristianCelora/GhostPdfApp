@@ -1,9 +1,14 @@
 @extends("layouts.upload_pdf")
 
+@section('scripts')
+    @parent
+    <script src="{{ asset('js/cut.js') }}" defer></script>
+@endsection
+
 @section("form")
 <div class="w-50 d-flex">
     <div class="form-control px-2" id="ranges-container">
-        <div class="d-flex w-100 my-2">
+        <div id="first-input-row" class="d-flex w-100 my-2">
             <div class="col-4 offset-1">
                 <input class="ghost-text-input w-100 h-100" type="text" name="pages_from[]" placeholder="from"/>
             </div>

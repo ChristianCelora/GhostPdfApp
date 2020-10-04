@@ -5,6 +5,7 @@ use Illuminate\Http\Request;
 
 abstract class PdfController extends Controller{
     const COMPRESSED_PREFIX = "c";
+    const CUT_PREFIX = "x";
     /** @var string $view_name view code */
     protected $view_name = "";
     /** @var string $style_color view primary style color */

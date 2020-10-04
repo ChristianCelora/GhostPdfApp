@@ -3660,7 +3660,6 @@ module.exports = function(module) {
 
 var Dropzone = __webpack_require__(/*! dropzone/index.js */ "./node_modules/dropzone/index.js");
 
-var token = "{{ Session::getToken() }}";
 Dropzone.options.myDropzone = {
   maxFiles: 1,
   maxFilesize: 300,
@@ -3697,21 +3696,12 @@ Dropzone.options.myDropzone = {
       }); // Add addtional form data
 
       var additional_data = $('#additionaFormData input').serializeArray();
-      var required = 0;
       $.each(additional_data, function (key, el) {
-        console.log(el.value);
-        if (el.value != null && el.value != "") required = 1;
         formData.append(el.name, el.value);
       });
-
-      if (required == 0) {
-        myDropzone.removeFile(file);
-        alert("Select a range before continue");
-        return;
-      }
-
       $("#loading-gif").show();
       $("#submit").hide();
+      toggleElements.call(this, true);
     }); //complete
 
     myDropzone.on("complete", function (file) {
@@ -3728,9 +3718,13 @@ Dropzone.options.myDropzone = {
 
     $("#loading-gif").hide();
     $("#submit").show();
+    $("#ranges-container > div[id!='first-input-row']").remove();
+    $("#ranges-container > div#first-input-row > div.add-range").remove();
   },
   error: function error(file, errorMessage, xhr) {
     console.log(errorMessage);
+    $("#loading-gif").hide();
+    $("#submit").show();
   }
 };
 $(".add-range").click(function () {
@@ -3741,7 +3735,8 @@ $(".add-range").click(function () {
 
   cloned_elem.find("input").each(function () {
     $(this).val("");
-  }); // Hide button in clonable element
+  });
+  cloned_elem.attr("id", ""); // Hide button in clonable element
 
   elem.find(".add-range").hide();
   $("#ranges-container").append(cloned_elem);

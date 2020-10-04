@@ -3,7 +3,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Http\Client\Response;
-use Illuminate\Support\Facades\Log;
+// use Illuminate\Support\Facades\Log;
 use Celo\GhostPDF\GhostPDF;
 
 class CompressPdfController extends PdfController {
