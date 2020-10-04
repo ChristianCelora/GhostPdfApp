@@ -2,6 +2,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Log;
 
 class CutPdfController extends PdfController {
     protected $view_name = "cut";
@@ -10,6 +11,6 @@ class CutPdfController extends PdfController {
     protected $action_route = "core.cut";
 
     public function execute(Request $request){
-        dd($request);
+        Log::debug($request);
     }
 }

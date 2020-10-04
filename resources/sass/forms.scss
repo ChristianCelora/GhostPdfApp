@@ -95,3 +95,44 @@
 .form-control {
     background-color: $body-bg !important;
 }
+/* Loading SVG */
+.loading-svg {
+    &:hover {
+        fill:white;
+    }
+}
+
+.loading-red {
+    fill: $red;
+}
+
+.loading-orange {
+    fill: $orange;
+}
+
+.loading-yellow {
+    fill: $yellow;
+}
+
+#loading-gif{
+    display: none;
+    width: 40px;
+    height: 40px;
+}
+
+#ranges-container {
+    height: auto;
+}
+
+.ghost-text-input {
+    background-color: transparent;
+    box-shadow: none !important;
+    padding: 0 5px 0 5px;
+    border: 1px solid $grey;
+    border-radius: 5px;
+}
+
+.add-range {
+    border: 3px solid $orange;
+    border-radius: 5px;
+}
