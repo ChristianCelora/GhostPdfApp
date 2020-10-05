@@ -30,5 +30,5 @@ Route::name('core.')->group(function(){
     Route::post('secure', 'SecurePdfController@execute')->name('secure');
 });
 
-Route::get('download/{file}/{filename}', 'CompressPdfController@download')->name('download');
+Route::get('download/{file}/{filename}/{extension}', 'CompressPdfController@download')->name('download');
 

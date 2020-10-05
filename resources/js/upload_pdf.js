@@ -35,9 +35,12 @@ Dropzone.options.myDropzone = {
             $.each(additional_data, function(key, el) {
                 formData.append(el.name, el.value);
             });
+            var additional_data = $('#additionaFormData select').serializeArray();
+            $.each(additional_data, function(key, el) {
+                formData.append(el.name, el.value);
+            });
             $("#loading-gif").show();
             $("#submit").hide();
-            toggleElements.call(this, true);
         });
         //complete
         myDropzone.on("complete", function(file){
@@ -46,8 +49,8 @@ Dropzone.options.myDropzone = {
     },
     success: function(file, response){
         console.log(response);
-        if("file" in response && "name" in response){
-            url = "download/" + response["file"] + "/" + response["name"];
+        if("file" in response && "name" in response && "extension" in response){
+            url = "download/" + response["file"] + "/" + response["name"] + "/" + response["extension"];
             document.location.href = url;
         }
         $("#loading-gif").hide();

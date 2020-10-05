@@ -1,10 +1,5 @@
 @extends("layouts.upload_pdf")
 
-@section('scripts')
-    @parent
-    <script src="{{ asset('js/cut.js') }}" defer></script>
-@endsection
-
 @section("form")
 <div class="w-50 d-flex">
     <div class="form-control px-2" id="ranges-container">

@@ -30,9 +30,13 @@ abstract class PdfController extends Controller{
     }
     /**
      * Download the file
+     * @param string $file      saved filename in storage
+     * @param string $filename  real filename to be downloaded
+     * @param string $extension extension of file in storage
      */
-    public function download(string $file, string $filename){
+    public function download(string $file, string $filename, string $extension){
         $headers = array("Content-Type" => "application/pdf");
-        return response()->download("/tmp/$file.pdf", $filename, $headers);
+        $file_path = storage_path('app/public')."/tmp/".$file."".$extension;
+        return response()->download($file_path, $filename, $headers);
     }
 }

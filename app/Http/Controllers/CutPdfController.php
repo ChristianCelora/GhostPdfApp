@@ -2,6 +2,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\Log;
 use Celo\GhostPDF\GhostPDF;
 
@@ -12,17 +13,15 @@ class CutPdfController extends PdfController {
     protected $action_route = "core.cut";
 
     public function execute(Request $request){
-        Log::debug($request);
-
         if ($this->isRequestValid($request)) {
             $ranges = $this->prepareRangesData($request);
-            Log::debug($ranges);
             if(!empty($ranges)){
                 $file = $request->file("file");
                 $gs_pdf = new GhostPDF($file->path());
                 $new_filename = self::CUT_PREFIX . pathinfo($file, PATHINFO_FILENAME);
                 $gs_pdf->setOutputFilename($new_filename);
                 $output = $gs_pdf->removePages($ranges);
+                Storage::disk('public')->put($output, 'Contents');
                 return array("file" => $new_filename, "name" => $file->getClientOriginalName());
             }
         }
