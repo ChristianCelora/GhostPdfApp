@@ -25,9 +25,9 @@ Route::name('view.')->group(function(){
 });
 
 Route::name('core.')->group(function(){
-    Route::post('compress', 'CompressPdfController@execute')->name('compress');
-    Route::post('cut', 'CutPdfController@execute')->name('cut');
-    Route::post('secure', 'SecurePdfController@execute')->name('secure');
+    Route::post('compress', 'CompressPdfController@execute')->name('compress')->middleware('compress.validate.request');
+    Route::post('cut', 'CutPdfController@execute')->name('cut')->middleware('cut.validate.request');
+    Route::post('secure', 'SecurePdfController@execute')->name('secure')->middleware('secure.validate.request');
 });
 
 Route::get('download/{file}/{filename}/{extension}', 'CompressPdfController@download')->name('download');

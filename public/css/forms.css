@@ -385,15 +385,15 @@
   fill: white;
 }
 
-.loading-red {
+.loading-red .loading-svg {
   fill: #e3342f;
 }
 
-.loading-orange {
+.loading-orange .loading-svg {
   fill: #f6993f;
 }
 
-.loading-yellow {
+.loading-yellow .loading-svg {
   fill: #f3da0b;
 }
 
