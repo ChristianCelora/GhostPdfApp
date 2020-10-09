@@ -20,7 +20,9 @@ class SecurePdfController extends PdfController {
             $new_filename = pathinfo($file, PATHINFO_FILENAME);
             $gs_pdf->setOutputFilename($new_filename);
             $output = $gs_pdf->secure($request->input("password"));
-            Storage::disk("public")->put($output, file_get_contents($output));
+            $output_no_ext = substr($output, 0, strlen($output)-4);
+            Log::debug($output);
+            Storage::disk("public")->put($output, file_get_contents($output_no_ext));
             return array(
                 "file" => $new_filename, 
                 "name" => $file->getClientOriginalName(), 
