@@ -7,7 +7,7 @@
         <option value="1">Max Compression (-50% size)</option>
     </select>
 </div>
-<div class="px-2 w-50">
+<div class="px-2 w-50 d-flex justify-content-center">
     <button type="submit" id="formSubmit" form="myDropzone" class="btn dropzone-outliner dropzone-outliner-red w-100">
         <div id="submit">
             compress

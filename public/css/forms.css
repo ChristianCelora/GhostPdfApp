@@ -342,6 +342,10 @@
   color: white;
 }
 
+#formSubmit {
+  height: 50px;
+}
+
 .dropzone-outliner-orange {
   border: 2px solid #f6993f;
 }

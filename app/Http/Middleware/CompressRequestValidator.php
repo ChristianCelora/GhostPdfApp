@@ -14,9 +14,9 @@ class CompressRequestValidator {
      * @return mixed
      */
     public function handle(Request $request, Closure $next){
-        if(!$request->hasFile("file")){
-            throw new Exception("No file has been uploaded");
-        }
+        $validatedData = $request->validate([
+            "file" => "required|mimetypes:application/pdf",
+        ]);
         return $next($request);
     }
 }

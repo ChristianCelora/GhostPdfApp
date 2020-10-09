@@ -20,8 +20,12 @@ class CutPdfController extends PdfController {
             $new_filename = self::CUT_PREFIX . pathinfo($file, PATHINFO_FILENAME);
             $gs_pdf->setOutputFilename($new_filename);
             $output = $gs_pdf->removePages($ranges);
-            Storage::disk('public')->put($output, 'Contents');
-            return array("file" => $new_filename, "name" => $file->getClientOriginalName());
+            Storage::disk("public")->put($output, file_get_contents($output));
+            return array(
+                "file" => $new_filename, 
+                "name" => $file->getClientOriginalName(),
+                "extension" => ".pdf"
+            );
         }
     }
 

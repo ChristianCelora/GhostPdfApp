@@ -20,7 +20,11 @@ class CompressPdfController extends PdfController {
         $gs_pdf->setOutputFilename($new_filename);
         $compression = (($request->has("compression_type"))) ? ($request->input("compression_type")) : false;
         $output = $gs_pdf->compress($compression);
-        Storage::disk('public')->put($output, 'Contents');
-        return array("file" => $new_filename, "name" => $file->getClientOriginalName(), "extension" => ".pdf");
+        Storage::disk("public")->put($output, file_get_contents($output));
+        return array(
+            "file" => $new_filename, 
+            "name" => $file->getClientOriginalName(), 
+            "extension" => ".pdf"
+        );
     }
 }

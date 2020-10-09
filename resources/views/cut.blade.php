@@ -16,7 +16,7 @@
         </div>
     </div>
 </div>
-<div class="px-2 w-50">
+<div class="px-2 w-50 d-flex justify-content-center">
     <button type="submit" id="formSubmit" form="myDropzone" class="btn dropzone-outliner dropzone-outliner-{{$color}} w-100">
         <div id="submit">
             slim

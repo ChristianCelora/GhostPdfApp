@@ -14,11 +14,11 @@ class CutRequestValidator {
      * @return mixed
      */
     public function handle(Request $request, Closure $next){
-        if(!$request->hasFile("file")){
-            throw new Exception("No file has been uploaded");
-        }else if(!$request->has("pages_from") || !$request->has("pages_to")){
-            throw new Exception("No ranges are specified");
-        }
+        $validatedData = $request->validate([
+            "pages_from" => "required|array",
+            "pages_to" => "required|array",
+            "file" => "required|mimetypes:application/pdf",
+        ]);
         return $next($request);
     }
 }

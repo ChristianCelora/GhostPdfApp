@@ -4,6 +4,7 @@ namespace App\Http\Middleware;
 
 use Closure;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Log;
 
 class SecureRequestValidator {
     /**
@@ -14,11 +15,12 @@ class SecureRequestValidator {
      * @return mixed
      */
     public function handle(Request $request, Closure $next){
-        if(!$request->hasFile("file")){
-            throw new Exception("No file has been uploaded");
-        }else if(!$request->has("password")){
-            throw new Exception("No password is specified");
-        }
+        // Log::debug([$request->file('file')->getMimeType(),$request->file('file')->getClientOriginalExtension()]);
+        $validatedData = $request->validate([
+            "password" => "required|string|max:255",
+            "file" => "required|mimetypes:application/pdf",
+        ]);
+        Log::debug(get_class($this));
         return $next($request);
     }
 }
