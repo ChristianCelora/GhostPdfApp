@@ -344,6 +344,7 @@
 
 #formSubmit {
   height: 50px;
+  padding: 0;
 }
 
 .dropzone-outliner-orange {
@@ -383,28 +384,23 @@
   background-color: #f8fafc !important;
 }
 
-/* Loading SVG */
-
-.loading-svg:hover {
-  fill: white;
-}
-
 .loading-red .loading-svg {
-  fill: #e3342f;
+  stroke: #222;
 }
 
 .loading-orange .loading-svg {
-  fill: #f6993f;
+  stroke: #222;
 }
 
 .loading-yellow .loading-svg {
-  fill: #f3da0b;
+  stroke: #222;
 }
 
 #loading-gif {
   display: none;
   width: 40px;
   height: 40px;
+  margin: 10px auto;
 }
 
 #ranges-container {
