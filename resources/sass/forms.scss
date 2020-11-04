@@ -35,30 +35,10 @@
     display: none !important;
 }
 
-.dropzone-container-red {
-    background-color: $red;
-}
-
-.dropzone-container-orange {
-    background-color: $orange;
-}
-
-.dropzone-container-yellow {
-    background-color: $yellow;
-}
-
 .dropzone-outliner {
     background-color: transparent;
     transition: background-color ease-in-out 0.5s;
     transition: color ease-in 0.25s;
-}
-
-.dropzone-outliner-red {
-    border: 2px solid $red;
-    &:hover {
-        background-color: $red;
-        color: white;
-    }
 }
 
 #formSubmit {
@@ -66,36 +46,7 @@
     padding: 0;
 }
 
-.dropzone-outliner-orange {
-    border: 2px solid $orange;
-    &:hover {
-        background-color: $orange;
-        color: white;
-    }
-}
 
-.dropzone-outliner-yellow {
-    border: 2px solid $yellow;
-    &:hover {
-        background-color: $yellow;
-        color: white;
-    }
-}
-
-.dropzone-red {
-    background-color: $bg-red;
-    border-color: $shade-white;
-}
-
-.dropzone-orange {
-    background-color: $bg-orange;
-    border-color: $shade-white;
-}
-
-.dropzone-yellow {
-    background-color: $bg-yellow;
-    border-color: $shade-white;
-}
 
 .form-control {
     background-color: $body-bg !important;

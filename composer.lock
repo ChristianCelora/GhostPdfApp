@@ -116,12 +116,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ChristianCelora/GhostPDF.git",
-                "reference": "733dc1302fbc95c9f65f7af5b045c1851a9cb6a7"
+                "reference": "09b4034923729bc41db927c6ede54f8f1bfd3af2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ChristianCelora/GhostPDF/zipball/733dc1302fbc95c9f65f7af5b045c1851a9cb6a7",
-                "reference": "733dc1302fbc95c9f65f7af5b045c1851a9cb6a7",
+                "url": "https://api.github.com/repos/ChristianCelora/GhostPDF/zipball/09b4034923729bc41db927c6ede54f8f1bfd3af2",
+                "reference": "09b4034923729bc41db927c6ede54f8f1bfd3af2",
                 "shasum": ""
             },
             "require": {
@@ -152,7 +152,7 @@
                 "compress",
                 "pdf"
             ],
-            "time": "2020-10-30T14:48:23+00:00"
+            "time": "2020-11-03T20:07:10+00:00"
         },
         {
             "name": "dnoegel/php-xdg-base-dir",

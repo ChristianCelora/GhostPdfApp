@@ -315,69 +315,15 @@
   display: none !important;
 }
 
-.dropzone-container-red {
-  background-color: #e3342f;
-}
-
-.dropzone-container-orange {
-  background-color: #f6993f;
-}
-
-.dropzone-container-yellow {
-  background-color: #f3da0b;
-}
-
 .dropzone-outliner {
   background-color: transparent;
   transition: background-color ease-in-out 0.5s;
   transition: color ease-in 0.25s;
 }
 
-.dropzone-outliner-red {
-  border: 2px solid #e3342f;
-}
-
-.dropzone-outliner-red:hover {
-  background-color: #e3342f;
-  color: white;
-}
-
 #formSubmit {
   height: 50px;
   padding: 0;
-}
-
-.dropzone-outliner-orange {
-  border: 2px solid #f6993f;
-}
-
-.dropzone-outliner-orange:hover {
-  background-color: #f6993f;
-  color: white;
-}
-
-.dropzone-outliner-yellow {
-  border: 2px solid #f3da0b;
-}
-
-.dropzone-outliner-yellow:hover {
-  background-color: #f3da0b;
-  color: white;
-}
-
-.dropzone-red {
-  background-color: #cc2e2a;
-  border-color: #f8fafc;
-}
-
-.dropzone-orange {
-  background-color: #dd8938;
-  border-color: #f8fafc;
-}
-
-.dropzone-yellow {
-  background-color: #dac409;
-  border-color: #f8fafc;
 }
 
 .form-control {

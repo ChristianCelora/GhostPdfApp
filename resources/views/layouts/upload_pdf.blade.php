@@ -7,6 +7,7 @@
 @section('style')
 <link href="{{ asset('css/home.css') }}" rel="stylesheet">
 <link href="{{ asset('css/forms.css') }}" rel="stylesheet">
+<link href="{{ asset('css/dropzone_colors.css') }}" rel="stylesheet">
 @endsection
 
 @section('content')

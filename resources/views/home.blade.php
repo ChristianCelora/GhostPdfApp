@@ -32,6 +32,13 @@
                 <div>Add owner and password to PDF</div>
             </div>        
         </div>
+        <div class="d-flex flex-lg-row flex-column box p-2 div-link" id="box4" data-location="{{route('view.convert.xlsx')}}">
+            <div class="flex-column">
+                <div class="mb-2"><i class="far fa-2x fa-file-excel"></i></div>
+                <div><h4>XSLX -> PDF</h4></div>
+                <div>Convert spreadsheet from xls/xlsx to pdf</div>
+            </div>        
+        </div>
     </div>
 </div>
 @endsection
