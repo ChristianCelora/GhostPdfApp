@@ -1,6 +1,9 @@
 @extends('layouts.app')
 
 @section('scripts')
+<script defer>
+    localStorage.setItem("accepted_files", "{{$accepted_files}}");
+</script>
 <script src="{{ asset('js/upload_pdf.js') }}" defer></script>
 @endsection
 

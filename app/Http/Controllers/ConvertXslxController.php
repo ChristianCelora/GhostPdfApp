@@ -11,4 +11,5 @@ class ConvertXslxController extends ConverterPdfController {
     protected $name = "convert_pdf";
     protected $style_color = "green";
     protected $action_route = "core.convert.xlsx";
+    protected $accepted_files = ".xls,.xslx";
 }
