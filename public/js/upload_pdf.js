@@ -3660,6 +3660,7 @@ module.exports = function(module) {
 
 var Dropzone = __webpack_require__(/*! dropzone/index.js */ "./node_modules/dropzone/index.js");
 
+console.log(localStorage.getItem("accepted_files"));
 Dropzone.options.myDropzone = {
   maxFiles: 1,
   maxFilesize: 300,
