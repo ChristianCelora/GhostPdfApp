@@ -73,3 +73,11 @@
     background-color: $bg-blue;
     border-color: $shade-white;
 }
+/* #loading-gif */
+.loading-red .loading-svg,
+.loading-orange .loading-svg,
+.loading-yellow .loading-svg,
+.loading-green .loading-svg,
+.loading-blue .loading-svg {
+    stroke: #222;
+}

@@ -1,9 +1,7 @@
 @extends("layouts.upload_pdf")
 
 @section("form")
-<div class="w-50">
-</div>
-<div class="px-2 w-50 d-flex justify-content-center">
+<div class="px-2 w-100 d-flex justify-content-center">
     <button type="submit" id="formSubmit" form="myDropzone" class="btn dropzone-outliner dropzone-outliner-green w-100">
         <div id="submit">
             Convert
