@@ -1,0 +1,83 @@
+/*------ DROPZONE CUSTOMIZATION COLORS -----------*/
+@import 'variables';
+/* .dropzone-container */
+.dropzone-container-red {
+    background-color: $red;
+}
+.dropzone-container-orange {
+    background-color: $orange;
+}
+.dropzone-container-yellow {
+    background-color: $yellow;
+}
+.dropzone-container-green {
+    background-color: $green;
+}
+.dropzone-container-blue {
+    background-color: $blue;
+}
+/* .dropzone-outliner */
+.dropzone-outliner-red {
+    border: 2px solid $red;
+    &:hover {
+        background-color: $red;
+        color: white;
+    }
+}
+.dropzone-outliner-orange {
+    border: 2px solid $orange;
+    &:hover {
+        background-color: $orange;
+        color: white;
+    }
+}
+.dropzone-outliner-yellow {
+    border: 2px solid $yellow;
+    &:hover {
+        background-color: $yellow;
+        color: white;
+    }
+}
+.dropzone-outliner-green {
+    border: 2px solid $green;
+    &:hover {
+        background-color: $green;
+        color: white;
+    }
+}
+.dropzone-outliner-blue {
+    border: 2px solid $blue;
+    &:hover {
+        background-color: $blue;
+        color: white;
+    }
+}
+/* .dropzone */
+.dropzone-red {
+    background-color: $bg-red;
+    border-color: $shade-white;
+}
+.dropzone-orange {
+    background-color: $bg-orange;
+    border-color: $shade-white;
+}
+.dropzone-yellow {
+    background-color: $bg-yellow;
+    border-color: $shade-white;
+}
+.dropzone-green {
+    background-color: $bg-green;
+    border-color: $shade-white;
+}
+.dropzone-blue {
+    background-color: $bg-blue;
+    border-color: $shade-white;
+}
+/* #loading-gif */
+.loading-red .loading-svg,
+.loading-orange .loading-svg,
+.loading-yellow .loading-svg,
+.loading-green .loading-svg,
+.loading-blue .loading-svg {
+    stroke: #222;
+}

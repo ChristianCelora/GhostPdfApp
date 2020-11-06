@@ -3664,7 +3664,7 @@ Dropzone.options.myDropzone = {
   maxFiles: 1,
   maxFilesize: 300,
   // MB
-  acceptedFiles: ".pdf",
+  acceptedFiles: localStorage.getItem("accepted_files"),
   autoProcessQueue: false,
   // Do not send files automatically
   paramName: "file",

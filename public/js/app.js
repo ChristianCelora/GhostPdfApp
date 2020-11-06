@@ -42069,7 +42069,7 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-throw new Error("Module build failed (from ./node_modules/css-loader/index.js):\nModuleBuildError: Module build failed (from ./node_modules/sass-loader/dist/cjs.js):\nError: ENOENT: no such file or directory, open '/var/www/ghostpdf/GhostPDF/resources/sass/dropzone_colors.scss'\n    at /var/www/ghostpdf/GhostPDF/node_modules/webpack/lib/NormalModule.js:316:20\n    at /var/www/ghostpdf/GhostPDF/node_modules/loader-runner/lib/LoaderRunner.js:367:11\n    at /var/www/ghostpdf/GhostPDF/node_modules/loader-runner/lib/LoaderRunner.js:203:19\n    at /var/www/ghostpdf/GhostPDF/node_modules/enhanced-resolve/lib/CachedInputFileSystem.js:85:15\n    at processTicksAndRejections (internal/process/task_queues.js:79:11)");
+// removed by extract-text-webpack-plugin
 
 /***/ }),
 

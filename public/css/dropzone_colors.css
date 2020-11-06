@@ -1,0 +1,108 @@
+/*------ DROPZONE CUSTOMIZATION COLORS -----------*/
+
+/* .dropzone-container */
+
+.dropzone-container-red {
+  background-color: #e3342f;
+}
+
+.dropzone-container-orange {
+  background-color: #f6993f;
+}
+
+.dropzone-container-yellow {
+  background-color: #f3da0b;
+}
+
+.dropzone-container-green {
+  background-color: #38c172;
+}
+
+.dropzone-container-blue {
+  background-color: #3490dc;
+}
+
+/* .dropzone-outliner */
+
+.dropzone-outliner-red {
+  border: 2px solid #e3342f;
+}
+
+.dropzone-outliner-red:hover {
+  background-color: #e3342f;
+  color: white;
+}
+
+.dropzone-outliner-orange {
+  border: 2px solid #f6993f;
+}
+
+.dropzone-outliner-orange:hover {
+  background-color: #f6993f;
+  color: white;
+}
+
+.dropzone-outliner-yellow {
+  border: 2px solid #f3da0b;
+}
+
+.dropzone-outliner-yellow:hover {
+  background-color: #f3da0b;
+  color: white;
+}
+
+.dropzone-outliner-green {
+  border: 2px solid #38c172;
+}
+
+.dropzone-outliner-green:hover {
+  background-color: #38c172;
+  color: white;
+}
+
+.dropzone-outliner-blue {
+  border: 2px solid #3490dc;
+}
+
+.dropzone-outliner-blue:hover {
+  background-color: #3490dc;
+  color: white;
+}
+
+/* .dropzone */
+
+.dropzone-red {
+  background-color: #cc2e2a;
+  border-color: #f8fafc;
+}
+
+.dropzone-orange {
+  background-color: #dd8938;
+  border-color: #f8fafc;
+}
+
+.dropzone-yellow {
+  background-color: #dac409;
+  border-color: #f8fafc;
+}
+
+.dropzone-green {
+  background-color: #38c172;
+  border-color: #f8fafc;
+}
+
+.dropzone-blue {
+  background-color: #3490dc;
+  border-color: #f8fafc;
+}
+
+/* #loading-gif */
+
+.loading-red .loading-svg,
+.loading-orange .loading-svg,
+.loading-yellow .loading-svg,
+.loading-green .loading-svg,
+.loading-blue .loading-svg {
+  stroke: #222;
+}
+

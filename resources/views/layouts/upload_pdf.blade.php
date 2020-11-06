@@ -1,12 +1,16 @@
 @extends('layouts.app')
 
 @section('scripts')
+<script defer>
+    localStorage.setItem("accepted_files", "{{$accepted_files}}");
+</script>
 <script src="{{ asset('js/upload_pdf.js') }}" defer></script>
 @endsection
 
 @section('style')
 <link href="{{ asset('css/home.css') }}" rel="stylesheet">
 <link href="{{ asset('css/forms.css') }}" rel="stylesheet">
+<link href="{{ asset('css/dropzone_colors.css') }}" rel="stylesheet">
 @endsection
 
 @section('content')

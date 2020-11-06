@@ -10,7 +10,7 @@
 
 @section('content')
 <div class="container">
-    <div class="row justify-content-center">
+    <div class="row">
         <div class="d-flex flex-lg-row flex-column box p-2 div-link" id="box1" data-location="{{route('view.compress')}}">
             <div class="flex-column">
                 <div class="mb-2"><i class="fa fa-2x fa-compress"></i></div>
@@ -30,6 +30,22 @@
                 <div class="mb-2"><i class="fa fa-2x fa-key"></i></div>
                 <div><h4>Secure PDF</h4></div>
                 <div>Add owner and password to PDF</div>
+            </div>        
+        </div>
+        <div class="d-flex flex-lg-row flex-column box p-2 div-link" id="box4" data-location="{{route('view.convert.xlsx')}}">
+            <div class="flex-column">
+                <div class="mb-2"><i class="far fa-2x fa-file-excel"></i></div>
+                <div><h4>XSLX -> PDF</h4></div>
+                <div>Convert spreadsheet from xls/xlsx to pdf</div>
+            </div>        
+        </div>
+    </div>
+    <div class="row mt-md-5">
+        <div class="d-flex flex-lg-row flex-column box p-2 div-link" id="box5" data-location="{{route('view.convert.docx')}}">
+            <div class="flex-column mr-auto">
+                <div class="mb-2"><i class="far fa-2x fa-file-word"></i></div>
+                <div><h4>DOCX -> PDF</h4></div>
+                <div>Convert document from doc/docx to pdf</div>
             </div>        
         </div>
     </div>

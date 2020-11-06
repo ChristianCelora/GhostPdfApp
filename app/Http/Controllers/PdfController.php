@@ -12,6 +12,11 @@ abstract class PdfController extends Controller{
     protected $style_color = "";
     /** @var string $action_route form action route */
     protected $action_route = "";
+    /** @var string $accepted_files dropzone form accepted files. 
+     * For override dropzone.js doc for valid values 
+     * https://www.dropzonejs.com/#configuration
+     * */
+    protected $accepted_files = ".pdf";
     /**
      * Perform operation
      */
@@ -24,7 +29,8 @@ abstract class PdfController extends Controller{
             $this->view_name, 
             [
                 "form_action" => $this->action_route, 
-                "color" => $this->style_color
+                "color" => $this->style_color,
+                "accepted_files" => $this->accepted_files
             ]
         );
     }

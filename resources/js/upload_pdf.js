@@ -3,7 +3,7 @@ const Dropzone = require('dropzone/index.js');
 Dropzone.options.myDropzone = {
     maxFiles: 1,
     maxFilesize: 300, // MB
-    acceptedFiles: ".pdf",
+    acceptedFiles: localStorage.getItem("accepted_files"),
     autoProcessQueue: false,    // Do not send files automatically
     paramName: "file", // The name that will be used to transfer the file
     init: function() {
