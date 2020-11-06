@@ -13,6 +13,9 @@
 .dropzone-container-green {
     background-color: $green;
 }
+.dropzone-container-blue {
+    background-color: $blue;
+}
 /* .dropzone-outliner */
 .dropzone-outliner-red {
     border: 2px solid $red;
@@ -42,6 +45,13 @@
         color: white;
     }
 }
+.dropzone-outliner-blue {
+    border: 2px solid $blue;
+    &:hover {
+        background-color: $blue;
+        color: white;
+    }
+}
 /* .dropzone */
 .dropzone-red {
     background-color: $bg-red;
@@ -57,5 +67,9 @@
 }
 .dropzone-green {
     background-color: $bg-green;
+    border-color: $shade-white;
+}
+.dropzone-blue {
+    background-color: $bg-blue;
     border-color: $shade-white;
 }

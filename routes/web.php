@@ -23,6 +23,7 @@ Route::name('view.')->group(function(){
     Route::get('cut', 'CutPdfController@show')->name('cut');
     Route::get('secure', 'SecurePdfController@show')->name('secure');
     Route::get('convert.xlsx', 'ConvertXslxController@show')->name('convert.xlsx');
+    Route::get('convert.docx', 'ConvertDocxController@show')->name('convert.docx');
 });
 
 Route::name('core.')->group(function(){
@@ -30,6 +31,7 @@ Route::name('core.')->group(function(){
     Route::post('cut', 'CutPdfController@execute')->name('cut')->middleware('cut.validate.request');
     Route::post('secure', 'SecurePdfController@execute')->name('secure')->middleware('secure.validate.request');
     Route::post('convert.xlsx', 'ConvertXslxController@execute')->name('convert.xlsx');
+    Route::post('convert.docx', 'ConvertDocxController@execute')->name('convert.docx');
 });
 
 Route::get('download/{file}/{filename}/{extension}', 'CompressPdfController@download')->name('download');

@@ -18,6 +18,10 @@
   background-color: #38c172;
 }
 
+.dropzone-container-blue {
+  background-color: #3490dc;
+}
+
 /* .dropzone-outliner */
 
 .dropzone-outliner-red {
@@ -56,6 +60,15 @@
   color: white;
 }
 
+.dropzone-outliner-blue {
+  border: 2px solid #3490dc;
+}
+
+.dropzone-outliner-blue:hover {
+  background-color: #3490dc;
+  color: white;
+}
+
 /* .dropzone */
 
 .dropzone-red {
@@ -75,6 +88,11 @@
 
 .dropzone-green {
   background-color: #38c172;
+  border-color: #f8fafc;
+}
+
+.dropzone-blue {
+  background-color: #3490dc;
   border-color: #f8fafc;
 }
 
