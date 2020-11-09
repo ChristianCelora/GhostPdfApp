@@ -41,7 +41,14 @@
         </div>
     </div>
     <div class="row mt-md-5">
-        <div class="d-flex flex-lg-row flex-column box p-2 div-link" id="box5" data-location="{{route('view.convert.docx')}}">
+        <div class="d-flex flex-lg-row flex-column box p-2 div-link" id="box5" data-location="{{route('view.convert.to-docx')}}">
+            <div class="flex-column mr-auto">
+                <div class="mb-2"><i class="far fa-2x fa-file-word"></i></div>
+                <div><h4>PDF -> DOCX</h4></div>
+                <div>Convert document from pdf to docx</div>
+            </div>        
+        </div>
+        <div class="d-flex flex-lg-row flex-column box p-2 div-link" id="box6" data-location="{{route('view.convert.docx')}}">
             <div class="flex-column mr-auto">
                 <div class="mb-2"><i class="far fa-2x fa-file-word"></i></div>
                 <div><h4>DOCX -> PDF</h4></div>

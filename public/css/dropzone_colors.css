@@ -18,6 +18,10 @@
   background-color: #38c172;
 }
 
+.dropzone-container-cyan {
+  background-color: #6cb2eb;
+}
+
 .dropzone-container-blue {
   background-color: #3490dc;
 }
@@ -60,6 +64,15 @@
   color: white;
 }
 
+.dropzone-outliner-cyan {
+  border: 2px solid #6cb2eb;
+}
+
+.dropzone-outliner-cyan:hover {
+  background-color: #3490dc;
+  color: white;
+}
+
 .dropzone-outliner-blue {
   border: 2px solid #3490dc;
 }
@@ -91,6 +104,11 @@
   border-color: #f8fafc;
 }
 
+.dropzone-cyan {
+  background-color: #6cb2eb;
+  border-color: #f8fafc;
+}
+
 .dropzone-blue {
   background-color: #3490dc;
   border-color: #f8fafc;
@@ -102,7 +120,8 @@
 .loading-orange .loading-svg,
 .loading-yellow .loading-svg,
 .loading-green .loading-svg,
-.loading-blue .loading-svg {
+.loading-blue .loading-svg,
+.loading-cyan .loading-svg {
   stroke: #222;
 }
 

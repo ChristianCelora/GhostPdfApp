@@ -27,6 +27,7 @@ Route::name('view.')->group(function(){
     Route::get('secure', 'SecurePdfController@show')->name('secure');
     Route::get('convert.xlsx', 'ConvertXslxPdfController@show')->name('convert.xlsx');
     Route::get('convert.docx', 'ConvertDocxPdfController@show')->name('convert.docx');
+    Route::get('convert.to-docx', 'ConvertPdfDocxController@show')->name('convert.to-docx');
 });
 
 Route::name('core.')->group(function(){
@@ -35,6 +36,7 @@ Route::name('core.')->group(function(){
     Route::post('secure', 'SecurePdfController@execute')->name('secure')->middleware('secure.validate.request');
     Route::post('convert.xlsx', 'ConvertXslxPdfController@execute')->name('convert.xlsx');
     Route::post('convert.docx', 'ConvertDocxPdfController@execute')->name('convert.docx');
+    Route::post('convert.to-docx', 'ConvertPdfDocxController@execute')->name('convert.to-docx');
 });
 
 Route::get('download/{file}/{filename}/{extension}', 'CompressPdfController@download')->name('download');

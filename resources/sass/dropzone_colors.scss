@@ -13,6 +13,9 @@
 .dropzone-container-green {
     background-color: $green;
 }
+.dropzone-container-cyan {
+    background-color: $cyan;
+}
 .dropzone-container-blue {
     background-color: $blue;
 }
@@ -45,6 +48,13 @@
         color: white;
     }
 }
+.dropzone-outliner-cyan {
+    border: 2px solid $cyan;
+    &:hover {
+        background-color: $blue;
+        color: white;
+    }
+}
 .dropzone-outliner-blue {
     border: 2px solid $blue;
     &:hover {
@@ -69,6 +79,10 @@
     background-color: $bg-green;
     border-color: $shade-white;
 }
+.dropzone-cyan {
+    background-color: $bg-cyan;
+    border-color: $shade-white;
+}
 .dropzone-blue {
     background-color: $bg-blue;
     border-color: $shade-white;
@@ -78,6 +92,7 @@
 .loading-orange .loading-svg,
 .loading-yellow .loading-svg,
 .loading-green .loading-svg,
-.loading-blue .loading-svg {
+.loading-blue .loading-svg,
+.loading-cyan .loading-svg {
     stroke: #222;
 }
