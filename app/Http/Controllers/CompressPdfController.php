@@ -3,7 +3,6 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
-use Illuminate\Support\Facades\Log;
 use Celo\GhostPDF\GhostPDF;
 
 class CompressPdfController extends PdfController {
@@ -13,7 +12,6 @@ class CompressPdfController extends PdfController {
     protected $action_route = "core.compress";
 
     public function execute(Request $request){
-        // Log::debug($request);
         $file = $request->file("file");
         $gs_pdf = new GhostPDF($file->path());
         $new_filename = self::COMPRESSED_PREFIX . pathinfo($file, PATHINFO_FILENAME);
