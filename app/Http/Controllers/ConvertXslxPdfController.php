@@ -6,7 +6,7 @@ use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\Log;
 use Celo\GhostPDF\GhostPDF;
 
-class ConvertXslxController extends ConverterPdfController {
+class ConvertXslxPdfController extends ConverterPdfController {
     protected $view_name = "convert_xlsx";
     protected $name = "convert_pdf";
     protected $style_color = "green";

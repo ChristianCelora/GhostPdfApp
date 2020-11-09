@@ -25,16 +25,16 @@ Route::name('view.')->group(function(){
     Route::get('compress', 'CompressPdfController@show')->name('compress');
     Route::get('cut', 'CutPdfController@show')->name('cut');
     Route::get('secure', 'SecurePdfController@show')->name('secure');
-    Route::get('convert.xlsx', 'ConvertXslxController@show')->name('convert.xlsx');
-    Route::get('convert.docx', 'ConvertDocxController@show')->name('convert.docx');
+    Route::get('convert.xlsx', 'ConvertXslxPdfController@show')->name('convert.xlsx');
+    Route::get('convert.docx', 'ConvertDocxPdfController@show')->name('convert.docx');
 });
 
 Route::name('core.')->group(function(){
     Route::post('compress', 'CompressPdfController@execute')->name('compress')->middleware('compress.validate.request');
     Route::post('cut', 'CutPdfController@execute')->name('cut')->middleware('cut.validate.request');
     Route::post('secure', 'SecurePdfController@execute')->name('secure')->middleware('secure.validate.request');
-    Route::post('convert.xlsx', 'ConvertXslxController@execute')->name('convert.xlsx');
-    Route::post('convert.docx', 'ConvertDocxController@execute')->name('convert.docx');
+    Route::post('convert.xlsx', 'ConvertXslxPdfController@execute')->name('convert.xlsx');
+    Route::post('convert.docx', 'ConvertDocxPdfController@execute')->name('convert.docx');
 });
 
 Route::get('download/{file}/{filename}/{extension}', 'CompressPdfController@download')->name('download');
