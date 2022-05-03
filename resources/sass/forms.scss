@@ -1,0 +1,77 @@
+@import 'variables';
+@import '~dropzone/dist/dropzone.css';
+@import '~dropzone/dist/basic.css';
+
+.dropzone {
+    border: 2px dashed;
+    border-radius: 5px;
+    height: 200px; /*test*/
+}
+
+.dz-preview {
+    width: 100% !important;
+}
+
+.dz-image {
+    background: transparent !important;
+}
+
+.dz-progress {
+    // margin-top: 35px;
+    margin-left: -70px !important;
+    top: 90% !important;
+    width: 150px !important;
+    background-color: transparent !important;
+    & > span.dz-upload {
+        background-color: $shade-white !important;
+    }
+}
+
+.dz-details {
+    text-align: center !important;
+}
+
+.dz-error-mark, .dz-error-message {
+    display: none !important;
+}
+
+.dropzone-outliner {
+    background-color: transparent;
+    transition: background-color ease-in-out 0.5s;
+    transition: color ease-in 0.25s;
+}
+
+#formSubmit {
+    height: 50px;
+    padding: 0;
+}
+
+
+
+.form-control {
+    background-color: $body-bg !important;
+}
+
+#loading-gif{
+    display: none;
+    width: 40px;
+    height: 40px;
+    margin: 5px auto;
+}
+
+#ranges-container {
+    height: auto;
+}
+
+.ghost-text-input {
+    background-color: transparent;
+    box-shadow: none !important;
+    padding: 0 5px 0 5px;
+    border: 1px solid $grey;
+    border-radius: 5px;
+}
+
+.add-range {
+    border: 3px solid $orange;
+    border-radius: 5px;
+}

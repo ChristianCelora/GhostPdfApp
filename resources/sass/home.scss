@@ -29,6 +29,18 @@
         background-color: $yellow;
     }
 
+    &#box4{
+        background-color: $green;
+    }
+
+    &#box5{
+        background-color: $cyan;
+    }
+
+    &#box6{
+        background-color: $blue;
+    }
+
     @media (min-width: $medium) {
         width: 23%;
         margin-right: 2%;

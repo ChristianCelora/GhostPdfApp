@@ -22,6 +22,7 @@
       <link href="{{ asset('css/layouts_app.css') }}" rel="stylesheet">
       @yield('style')
 
+      <link rel="icon" href="{{ asset('img/favicon.ico') }}" type="image/x-icon"/> <!-- From Laravel 6.x -->
    </head>
    <body>
       <div id="app" class="bg-light">

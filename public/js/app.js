@@ -42062,6 +42062,28 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
 /***/ }),
 
+/***/ "./resources/sass/dropzone_colors.scss":
+/*!*********************************************!*\
+  !*** ./resources/sass/dropzone_colors.scss ***!
+  \*********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
+/***/ "./resources/sass/forms.scss":
+/*!***********************************!*\
+  !*** ./resources/sass/forms.scss ***!
+  \***********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
 /***/ "./resources/sass/home.scss":
 /*!**********************************!*\
   !*** ./resources/sass/home.scss ***!
@@ -42085,14 +42107,16 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 /***/ }),
 
 /***/ 0:
-/*!**************************************************************************************************************************!*\
-  !*** multi ./resources/js/app.js ./resources/sass/home.scss ./resources/sass/layouts_app.scss ./resources/sass/app.scss ***!
-  \**************************************************************************************************************************/
+/*!********************************************************************************************************************************************************************************************!*\
+  !*** multi ./resources/js/app.js ./resources/sass/home.scss ./resources/sass/forms.scss ./resources/sass/dropzone_colors.scss ./resources/sass/layouts_app.scss ./resources/sass/app.scss ***!
+  \********************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(/*! /var/www/ghostpdf/GhostPDF/resources/js/app.js */"./resources/js/app.js");
 __webpack_require__(/*! /var/www/ghostpdf/GhostPDF/resources/sass/home.scss */"./resources/sass/home.scss");
+__webpack_require__(/*! /var/www/ghostpdf/GhostPDF/resources/sass/forms.scss */"./resources/sass/forms.scss");
+__webpack_require__(/*! /var/www/ghostpdf/GhostPDF/resources/sass/dropzone_colors.scss */"./resources/sass/dropzone_colors.scss");
 __webpack_require__(/*! /var/www/ghostpdf/GhostPDF/resources/sass/layouts_app.scss */"./resources/sass/layouts_app.scss");
 module.exports = __webpack_require__(/*! /var/www/ghostpdf/GhostPDF/resources/sass/app.scss */"./resources/sass/app.scss");
 

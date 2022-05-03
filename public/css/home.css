@@ -21,7 +21,19 @@
 }
 
 .box#box3 {
-  background-color: #ffed4a;
+  background-color: #f3da0b;
+}
+
+.box#box4 {
+  background-color: #38c172;
+}
+
+.box#box5 {
+  background-color: #6cb2eb;
+}
+
+.box#box6 {
+  background-color: #3490dc;
 }
 
 @media (min-width: 768px) {
